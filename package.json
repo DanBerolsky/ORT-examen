@@ -1,0 +1,20 @@
+{
+  "name": "ort-examen",
+  "version": "1.0.0",
+  "description": "parcial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node fs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanBerolsky/ORT-examen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanBerolsky/ORT-examen/issues"
+  },
+  "homepage": "https://github.com/DanBerolsky/ORT-examen#readme"
+}
