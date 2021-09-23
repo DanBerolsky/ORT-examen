@@ -21,6 +21,18 @@ function parcial(parametro){
                 })
             });
         })
+    } else if(parametro == "length"){
+        fs.writeFile("summary.txt","```txt\n", (err,data)=>{
+            if(err) throw err
+            console.log("exito");
+            fs.readdir(dir, (err, files) => {
+                files.map(x => {
+                    var data = fs.readFileSync(dir+"/"+x,'utf8');
+                    let cantCarateres = data.length
+                    fs.appendFile("summary.txt", x+"  "+ cantCarateres + "  chars" +"\n", err=>{if(err) throw err} )
+                })
+            });
+        })
     }
 }
 
