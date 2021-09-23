@@ -47,6 +47,8 @@ function parcial(parametro){
             })
         });
     
+    }else{
+        console.log("El comando" + parametro[0] +" no se reconoce. Los comandos validos son: count, size, length, search");
     }
 }
 
