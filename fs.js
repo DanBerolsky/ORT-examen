@@ -33,6 +33,20 @@ function parcial(parametro){
                 })
             });
         })
+    }else if(parametro[0] == "search"){
+        let ultimoParametro = parametro[1]
+       
+        fs.readdir(dir, (err, files) => {
+            files.map(x => {
+                let data = fs.readFileSync(dir+"/"+x,'utf8');
+            
+                if(data.includes(ultimoParametro)){
+                    console.log(x);
+                }
+                
+            })
+        });
+    
     }
 }
 
