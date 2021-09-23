@@ -34,7 +34,7 @@ function parcial(parametro){
             });
         })
     }else if(parametro[0] == "search"){
-        let ultimoParametro = parametro[1]
+        let ultimoParametro = parametro[parametro.length-1]
        
         fs.readdir(dir, (err, files) => {
             files.map(x => {
